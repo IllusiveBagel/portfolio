@@ -46,13 +46,19 @@
   width: 100vw;
 }
 
-.title {
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
-  width: 100vw;
+.flex {
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +69,7 @@
   font-size: 5em;
   margin: 0;
   color: #fff;
+  z-index: 1;
 }
 
 .subTitle {
@@ -89,6 +96,7 @@
   display: inline-block;
   background-color: transparent;
   transition: all 0.5s;
+  z-index: 1;
 }
 
 .learn:hover {

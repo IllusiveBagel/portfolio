@@ -4,7 +4,7 @@ import Title from './Components/Landing/Title';
 
 function App() {
     return (
-        <section>
+        <section class="flex">
             <LandingPage />
             <Title />
         </section>
