@@ -9070,6 +9070,11 @@
   "resolved" "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz"
   "version" "1.8.0"
 
+"ptjs@^0.2.4":
+  "integrity" "sha1-HRTeyVFwUAO+iThnGrBzAEVFxRo="
+  "resolved" "https://registry.npmjs.org/ptjs/-/ptjs-0.2.4.tgz"
+  "version" "0.2.4"
+
 "public-encrypt@^4.0.0":
   "integrity" "sha512-zVpa8oKZSz5bTMTFClc1fQOnyyEzpl5ozpi1B5YcvBrdohMjH2rfsBtyXcuNuwjsDIXmBYlF2N5FlJYhR29t8Q=="
   "resolved" "https://registry.yarnpkg.com/public-encrypt/-/public-encrypt-4.0.3.tgz"
