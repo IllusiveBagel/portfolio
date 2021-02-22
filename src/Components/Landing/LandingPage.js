@@ -2,8 +2,17 @@ import React from 'react';
 import {CanvasSpace, Form, Line, Vector, Const} from 'ptjs';
 
 export default class LandingPage extends React.Component {
+    componentWillMount() {
+        this.floatySpace();
+    }
+
     componentDidMount() {
         this.floatySpace();
+        window.addEventListener("resize", this.floatySpace);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.floatySpace);
     }
 
     floatySpace() {
