@@ -45,3 +45,53 @@
   position: absolute;
   width: 100vw;
 }
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 5em;
+  margin: 0;
+  color: #fff;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.subTitle h4 {
+  font-size: 1.2em;
+  color: #e31b6d;
+  margin: 5px;
+}
+
+.learn {
+  color: #fff;
+  margin-top: 30px;
+  padding: 12px 20px 12px 20px;
+  border: 2px solid #fff;
+  font-size: 16pt;
+  cursor: pointer;
+  box-sizing: inherit;
+  display: inline-block;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.learn:hover {
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+}
