@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.canvas {
+  background-color: #252934;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+}
