@@ -7,7 +7,7 @@ export default function Title() {
                 <h4 style={{ color: "#fff" }}>and</h4>
                 <h4>Network Engineer</h4>
             </div>
-            <button class="learn">Learn More</button>
+            <a class="learn" href="#About">Learn More</a>
         </div>
     )
 }

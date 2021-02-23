@@ -1,41 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .canvas {
   background-color: #252934;
@@ -44,14 +7,19 @@
   top: 0;
   position: absolute;
   width: 100vw;
+  max-width: 100%;
 }
 
-.flex {
+.section {
   position: absolute;
-  top: 0;
   left: 0;
   height: 100%;
   width: 100vw;
+  max-width: 100%;
+  background-color: #f2f2f2;
+}
+
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,4 +72,147 @@
 .learn:hover {
   background-color: #04c2c9;
   border-color: #04c2c9;
+}
+
+/*======================================================
+                          Elements
+  ======================================================*/
+
+html {
+  scroll-behavior: smooth; 
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+/*======================================================
+                          Navbar
+  ======================================================*/
+
+.Navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: rgb(13, 26, 38);
+  height: 60px;
+  line-height: 60px;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.Nav-Wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+} @media(max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+} @media(max-width: 638px) {
+    .nav-wrapper {
+      width: 100%;
+    }
+}
+
+.Logo {
+  float: left;
+  margin-left: 28px;
+  font-size: 1.5em;
+  height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Navbar ul {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  /* margin-right: 14px; */
+  margin-top: -2px;
+  text-align: right;
+  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+} @media(max-width: 640px) {
+    .Navbar ul {
+      display: none;
+    }
+  } @media(orientation: landscape) {
+      .Navbar ul {
+        display: inline-block;
+      }
+    }
+
+.Navbar li {
+  display: inline-block;
+}
+
+.Navbar li a {
+  color: rgb(13, 26, 38);
+  display: block;
+  font-size: 0.7em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.Navbar li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: rgb(28, 121, 184);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+.Navbar li a:before, .Navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(13, 26, 38);
+}
+
+.Navbar li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+.Navbar li a:after {
+  background: rgb(13, 26, 38);
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+.Navbar li a:hover:before {
+  background: rgb(13, 26, 38);
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+.Navbar li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+.Navbar .Active {
+  border-bottom: 1px solid rgb(13, 26, 38);
+}
+
+.Stick {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
