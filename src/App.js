@@ -47,16 +47,16 @@ export default class App extends React.Component {
                     <Navbar Class="Navbar Stick" />
                 }
                 <section id="About" className="section flex" style={{ top: "100%" }}>
-    
+                    <h1>About</h1>
                 </section>
                 <section id="Projects" className="section flex" style={{ top: "200%" }}>
-    
+                    <h1>Projects</h1>
                 </section>
                 <section id="Blog" className="section flex" style={{ top: "300%" }}>
-    
+                    <h1>Blog</h1>
                 </section>
                 <section id="Contact" className="section flex" style={{ top: "400%" }}>
-    
+                    <h1>Contact</h1>
                 </section>
             </>
         );
