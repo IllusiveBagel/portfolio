@@ -6,7 +6,7 @@ export default class Navbar extends React.Component {
         return (
             <nav className={this.props.Class}>
                 <div className="Nav-Wrapper">
-                    <div class="Logo">
+                    <div className="Logo">
                         <a href="#Home">Logan Young</a>
                     </div>
                     <Scrollspy items={ ['About', 'Projects', 'Blog', 'Contact'] } className="Menu" currentClassName="Active">
