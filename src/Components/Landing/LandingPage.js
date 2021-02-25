@@ -89,7 +89,7 @@ export default class LandingPage extends React.Component {
 
     render() {
         return(
-            <div id="pt" class="canvas">
+            <div id="pt" className="canvas">
                 <canvas id="canvas" style={{ width: "1920px", height: "1142px" }}></canvas>
             </div>
         );
