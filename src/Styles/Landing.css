@@ -1,0 +1,76 @@
+/*======================================================
+                       Landing Page                      
+  ======================================================*/
+.canvas {
+    background-color: #252934;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+  }
+  
+  .section {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .title h1 {
+    font-size: 5em;
+    margin: 0;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .subTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .subTitle h4 {
+    font-size: 1.2em;
+    color: #e31b6d;
+    margin: 5px;
+  }
+  
+  .learn {
+    color: #fff;
+    margin-top: 30px;
+    padding: 12px 20px 12px 20px;
+    border: 2px solid #fff;
+    font-size: 16pt;
+    cursor: pointer;
+    box-sizing: inherit;
+    display: inline-block;
+    background-color: transparent;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  
+  .learn:hover {
+    background-color: #04c2c9;
+    border-color: #04c2c9;
+  }

@@ -1,0 +1,14 @@
+/*======================================================
+                          Elements
+  ======================================================*/
+
+html {
+  scroll-behavior: smooth; 
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}

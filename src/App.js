@@ -1,7 +1,10 @@
-import './App.css';
+import './Styles/App.css';
+import './Styles/Landing.css';
+import './Styles/Navigation.css';
 import LandingPage from './Components/Landing/LandingPage';
 import Title from './Components/Landing/Title';
 import Navbar from './Components/Navigation/Navbar';
+import Info from './Components/About/Info';
 import React from 'react';
 
 export default class App extends React.Component {
@@ -47,7 +50,7 @@ export default class App extends React.Component {
                     <Navbar Class="Navbar Stick" />
                 }
                 <section id="About" className="section flex" style={{ top: "100%" }}>
-                    <h1>About</h1>
+                    <Info />
                 </section>
                 <section id="Projects" className="section flex" style={{ top: "200%" }}>
                     <h1>Projects</h1>
