@@ -11,21 +11,6 @@
     max-width: 100%;
   }
   
-  .section {
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100vw;
-    max-width: 100%;
-    background-color: #f2f2f2;
-  }
-  
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
   .title {
     font-family: 'Raleway', sans-serif;
     display: flex;
