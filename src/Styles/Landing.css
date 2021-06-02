@@ -59,3 +59,25 @@
     background-color: #04c2c9;
     border-color: #04c2c9;
   }
+
+/*======================================================
+                    Mobile Landing Page                      
+  ======================================================*/
+@media(max-width: 640px) {
+  .title h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .subTitle {
+    flex-direction: column;
+  }
+
+  .subTitle h4 {
+    margin: 0
+  }
+
+  .learn {
+    font-size: 13pt;
+  }
+}

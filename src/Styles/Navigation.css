@@ -19,14 +19,6 @@
     margin: auto;
     text-align: center;
     width: 70%;
-  } @media(max-width: 768px) {
-      .Nav-Wrapper {
-        width: 90%;
-      }
-  } @media(max-width: 638px) {
-      .Nav-Wrapper {
-        width: 100%;
-      }
   }
   
   .Logo {
@@ -42,20 +34,11 @@
     display: inline-block;
     float: right;
     list-style: none;
-    /* margin-right: 14px; */
     margin-top: -2px;
     text-align: right;
     transition: transform 0.5s ease-out;
     -webkit-transition: transform 0.5s ease-out;
-  } @media(max-width: 640px) {
-      .Navbar ul {
-        display: none;
-      }
-    } @media(orientation: landscape) {
-        .Navbar ul {
-          display: inline-block;
-        }
-      }
+  }
   
   .Navbar li {
     display: inline-block;
@@ -77,7 +60,6 @@
   }
   
   .Navbar li a:hover {
-    /* border-bottom: 1px solid rgb(28, 121, 184); */
     color: rgb(28, 121, 184);
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -101,7 +83,6 @@
   .Navbar li a:after {
     background: rgb(13, 26, 38);
     right: 0;
-    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
   }
   
   .Navbar li a:hover:before {
@@ -113,7 +94,6 @@
   .Navbar li a:hover:after {
     background: transparent;
     width: 100%;
-    /* transition: 0s; */
   }
   
   .Navbar .Active {
@@ -126,6 +106,29 @@
     left: 0;
   }
   
-  /*======================================================
+/*======================================================
                         Navbar Mobile
-    ======================================================*/
+  ======================================================*/
+@media(max-width: 768px) {
+  .Nav-Wrapper {
+    width: 90%;
+  }
+}
+
+@media(max-width: 640px) {
+  .Navbar ul {
+    display: none;
+  }
+}
+  
+@media(max-width: 638px) {
+  .Nav-Wrapper {
+    width: 100%;
+  }
+}
+
+@media(orientation: landscape) {
+  .Navbar ul {
+    display: inline-block;
+  }
+}
